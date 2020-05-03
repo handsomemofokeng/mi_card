@@ -11,23 +11,21 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.green,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 75.0,
+                backgroundImage: AssetImage('images/handsome.jpg'),
+              ),
+              Text(
+                'Handsome Mofokeng',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 35.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.white,
-                child: Text('Container 1'),
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
-                child: Text('Container 1'),
+                width: double.infinity,
               ),
             ],
           ),
