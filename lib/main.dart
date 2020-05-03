@@ -8,6 +8,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blue,
+        body: Container(
+          color: Colors.blueGrey,
+        ),
       ),
     );
   }
